@@ -1,0 +1,188 @@
+---
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+# LTR retrotransposons in plant genomes with holocentric chromosomes
+
+<br/><br/>
+
+## Abstract
+>LTR retrotransposons (LTR-RTs) are mobile genetic elements constituting remarkable
+portions of plant genomes and significantly contribute to genome structure, size and regulations.
+Some LTR-RTs lineages are distributed uniformly while others are localized in centromeres of
+monocentric chromosomes. But little is known about characterization and distribution of
+retrotransposons within genomes with holocentric chromosomes. We will test our hypothesis that
+the LTR RTs in holocentrics will be evenly distributed along chromosomes. Therefore we designed the
+comparative study with three groups where each is composed from two holocentric plant species
+with different karyotypes and one phylogenetically closest monocentric relative. These species will
+be sequenced using: (1) Oxford Nanopore Technologies (long reads) and (2) Illumina sequencing
+(short reads). The primary assembly will be generated and subjected to the in-depth LTR-RTs
+detection analysis. Our investigation will provide information on LTR-RTs families abundance and
+distribution in relation to the phenomenon of holocentrism.
+
+<br/><br/>
+
+## Project workflow
+>1. Plant species selection:
+Holocentric plant species are chosen across phylogenetically distant taxons and concurrently
+within one taxon/genera pick up at least two species with remarkably different karyotype.
+Each higher holocentric taxon will be chosen its phylogenetically closest monocentric
+counterparts. Representatives of monocots and eudicots will be included (for plant species
+list see Table 1).
+2. Genomic DNA sequencing:
+We will obtain a partial and/or full-length sequences of LTR retrotransposons from all plant
+species and a primary genome assembly of plant subset using combination of long (Oxford
+Nanopore Technologies) and short (Illumina sequencing) reads.
+3. Subsequent analysis:
+o in-depth search and annotation of full-length LTR retrotransposons
+o their distribution in chromosomes (alternatively in assembled scaffolds)
+o identification of additional sequences carried within retroelements with possible
+function for the holocentric arrangement – satellites, tandem repeats, retrogenes,
+eORF, (micro) miRNA
+4. Based on information about abundance of LTR retrotransposon families and their
+distribution in our model plant species, we will describe LTR retrotransposon landscape and
+its relation to holocentrism.
+
+<br/><br/>
+
+## Plant species table
+<!-- pure html+css style table!!! see: https://www.w3schools.com/css/default.asp -->
+
+<style>
+thead {
+  font-weight: bold;
+  color:white;
+  background-color:black
+}
+tbody {
+  color:black
+}
+
+</style>
+
+<table style="width:90%">
+  <thead>
+    <tr>
+      <td></td>
+      <td colspan="4", align="center">Holocentric</td>
+      <td colspan="4", align="center">Monocentric</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>family</td>
+      <td>species</td>
+      <td> 2C [Mbp] </td>
+      <td>2n</td>
+      <td>family</td>
+      <td>species</td>
+      <td>2C [Mbp]</td>
+      <td>2n</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color:#cc4c02">
+      <td rowspan="4">1&emsp;</td>
+      <td>Cyperaceae</td>
+      <td style="font-style:italic">Carex acutiformis</td>
+      <td>800</td>
+      <td>78</td>
+      <td>Poaceae</td>
+      <td style="font-style:italic">Oryza sativa Nipponbare</td>
+      <td>799</td>
+      <td>24</td>
+    </tr>
+    <tr style="background-color:#cc4c02">
+      <td>Cyperaceae</td>
+      <td style="font-style:italic">Cyperus papyrus</td>
+      <td>542</td>
+      <td>100</td>
+      <td>Poaceae</td>
+      <td style="font-style:italic">Brychypodium distachyon</td>
+      <td>355</td>
+      <td>10</td>
+    </tr>
+    <tr style="background-color:#cc4c02">
+      <td>Juncaceae</td>
+      <td style="font-style:italic">Luzula pilosa</td>
+      <td>588</td>
+      <td>66</td>
+      <td></td>
+      <td style="font-style:italic"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr style="background-color:#cc4c02">
+      <td>Juncaceae</td>
+      <td style="font-style:italic">Luzula elegans</td>
+      <td>8330</td>
+      <td>6</td>
+      <td></td>
+      <td style="font-style:italic"></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr style="background-color:#fe9929">
+      <td rowspan="4">2</td>
+      <td>Droseraceae</td>
+      <td style="font-style:italic">Drosera capensis</td>
+      <td>789</td>
+      <td>40</td>
+      <td>Drosophyllaceae</td>
+      <td style="font-style:italic">Drosophyllum lusitanicum</td>
+      <td>20833</td>
+      <td>12</td>
+    </tr>
+    <tr style="background-color:#fe9929">
+       <td>Droseraceae</td>
+      <td style="font-style:italic">Drosera micrantha</td>
+      <td>7489</td>
+      <td>10</td>
+      <td>Nepenthaceae</td>
+      <td style="font-style:italic">Nepenthes ventricosa</td>
+      <td>3315</td>
+      <td>80</td>
+    </tr>
+    <tr style="background-color:#fe9929">
+       <td></td>
+      <td style="font-style:italic"></td>
+      <td></td>
+      <td></td>
+      <td>Polygonaceae</td>
+      <td style="font-style:italic">Polygonum persicaria</td>
+      <td>882</td>
+      <td>44</td>
+    </tr>
+    <tr style="background-color:#fe9929">
+      <td></td>
+      <td style="font-style:italic"></td>
+      <td></td>
+      <td></td>
+      <td>Polygonaceae</td>
+      <td style="font-style:italic">Rumex alpinus</td>
+      <td>868</td>
+      <td>20</td>
+    </tr>
+    <tr style="background-color:#fee391">
+      <td rowspan="2">3</td>
+      <td>Melanthiaceae</td>
+      <td style="font-style:italic">Chionographis</td>
+      <td>2989</td>
+      <td>24</td>
+      <td>Melanthiaceae</td>
+      <td style="font-style:italic">Paris quadrifolia</td>
+      <td>99019</td>
+      <td>10</td>
+    </tr>
+    <tr style="background-color:#fee391">
+      <td>Melanthiaceae</td>
+      <td style="font-style:italic">Chamaelirium luteum</td>
+      <td>1800</td>
+      <td>24</td>
+      <td></td>
+      <td style="font-style:italic"></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
